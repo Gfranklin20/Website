@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+<title>Gregory's_Website</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+   background-image: url('https://i.ibb.co/NSYmYs3/fullsizeoutput-524e.jpg');
+    min-height: 100%;
+}
+
+/* Second image (The Zumbyes) */
+.bgimg-2 {
+    background-image: url("https://preview.ibb.co/fLVp6b/Zums_full_5.jpg");
+    min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+    background-image: url("http://macollegedems.org/wp-content/uploads/2017/02/ac.jpg");
+    min-height: 400px;
+
+}
+
+/* Fourth image (Photography) */
+.bgimg-4 {
+    background-image: url("http://coolwallpaperz.info/user-content/uploads/wall/o/75/entertainment-wide-hq-misc-photography-644041.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Magic) */
+.bgimg-5 {
+    background-image: url("https://www.vegasmaster.com/wp-content/uploads/2014/07/magiccardtricks.jpg");
+    min-height: 400px;
+}
+
+/* Fifth image (Speeches) */
+.bgimg-6 {
+    background-image: url("https://i.ibb.co/5F4kNtK/5cf05c71521b9-image.jpg");
+    min-height: 400px;
+}
+
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+.w3-spin {}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> About</a>
+    <a href="#thezumbyes" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-music"></i> The Zumbyes</a>
+    <a href="#Photography" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-camera"></i> Photography</a>
+    <a href="#Magic" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-cube"></i> Magic</a>
+    <a href="#Speeches" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-microphone"></i> Speeches</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> Contact</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#thezumbyes" class="w3-bar-item w3-button" onclick="toggleFunction()">The Zumbyes</a>
+    <a href="#Photography" class="w3-bar-item w3-button" onclick="toggleFunction()">Photography</a>
+    <a href="#Magic" class="w3-bar-item w3-button" onclick="toggleFunction()">Magic</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-topleft" style="white-space:nowrap;">
+    <br/>
+    <br/>
+    <br/>
+    <span class=" w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">Gregory</span> Franklin</span>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+  </div>
+<div class="w3-display-topleft" style="white-space:nowrap;">
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <span class="w3-center w3-padding-small w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small"><a href="https://drive.google.com/file/d/1S6-vAi7fpdIItmKDg5siDKLN6e9SIlRA/view?usp=sharing">Resume</a></span></span>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3>
+  <p class="w3-center"><em>Water. Earth. Fire. Air.</em></p>
+  <p>My grandmother used to tell me stories about the old days, a time of peace when the Avatar kept balance between the Water Tribes, Earth Kingdom, Fire Nation, and Air Nomads. But that all changed when the Fire Nation attacked. Only the Avatar mastered all four elements. Only he could stop the ruthless firebenders. But when the world needed him most, he vanished. A hundred years have passed and the Fire Nation is nearing victory in the War. Two years ago, my father and the men of my tribe journeyed to the Earth Kingdom to help fight against the Fire Nation, leaving me and my brother to look after our tribe. Some people believe that the Avatar was never reborn into the Air Nomads, and that the cycle is broken. But I haven't lost hope. I still believe that somehow, the Avatar will return to save the world.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class=" w3-margin-right"></i>Gregory. <p>Greg for short.</p> <p>Grego for medium.</p></b></p><br>
+      <img src="res/16464386_1726836637626934_6811710469510791168_n.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Welcome to my website! I made this website in so that I could have a space where I can share some of the activities and hobbies that I am into. The list of activities are not exetensive they will be growing as time passes. I'll tell a little about myself. I am a current senior at Amherst college and I hail from Chicago, Illinois. I study computer science and have job right now to work on cyber security consulting at Deloitte next year. I am hoping to get more into the world of cyber security as I progress through my career so watch out. I am a kid that is always on the move and always wanting to be busy and full with new activiteis or projects. I hope you enjoy the content on this website and that you decide to contact me!</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">What I'm made of:</p>
+  <p class="w3-wide"><i class="fa fa-users"></i>Leadership</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-handshake-o"></i>Teamwork</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-graduation-cap"></i>Quick and determined learner</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:100%">100%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Extracurriculars<br>Include...</span>
+    
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">HackAmherst Executive Board</span><br>
+    <a href="http://www.hackamherst.com">hackamherst.com</a>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Student Council</span><br>
+    
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Resident Assistant</span><br>
+  </div>
+</div>
+
+
+
+<!-- Second Parallax Image with The Zumbyes Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id="thezumbyes">
+   <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide">The Zumbyes</span>
+  </div>
+</div>
+
+<!-- Container (The Zumbyes Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center">Our Videos</h3>
+  <p class="w3-center"><em>The Zumbyes are a group of fun, talented people that love singing. I joined the group my first year of college and it has been such a big part of my life since then. Here are some of our latest videos<br> Click on the videos to play them</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+  	<!-- More Than Words -->
+  	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/RypwVzfH3yY">
+	</iframe>
+	<!--Footloose-->
+	 <iframe width="420" height="315"
+		src="https://www.youtube.com/embed/yz89TVdVWQk">
+	</iframe>
+	<!--ALl Night Long--> 
+	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/ovxiXx5Xz6A?start=41">
+	</iframe>
+	<!--Dannys Song-->
+	<iframe width="420" height="315"
+		src="https://www.youtube.com/embed/HnZKV4Tg6JY">
+	</iframe>
+	<!--Fudnraising Video-->
+  <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/g2f_xUGhk9c">
+  </iframe>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with The Photography Text -->
+<div class="bgimg-4 w3-display-container w3-opacity-min " id="Photography">
+   <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide">Photography</span>
+  </div>
+</div>
+
+
+
+
+<!-- Container (The Photography Section) -->
+<div class="w3-content w3-row-padding w3-container w3-padding-64" >
+  <h3 class="w3-center">My Photos</h3>
+  <p class="w3-center"><em>I got a film camera during the summer of 2017 and got really into taking photos. These are some of the pictures I took that summer. Since then I have really enjoyed capturing memories with pohotography <br> Click on the photos to see them larger</em></p><br>
+<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/IMG_1994.jpg" style="width:150%" onclick="onClick(this)" class="w3-hover-opacity" alt="The River">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/80080024.jpg" style="width:130%" onclick="onClick(this)" class="w3-hover-opacity" alt="Duck Duck Goose">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/IMG_1984.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Guitarist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/IMG_2095.jpg" style="width:180%" onclick="onClick(this)" class="w3-hover-opacity" alt="Droplets">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/IMG_1982.jpg" style="width:170%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mom laughing">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/IMG_1983.jpg" style="width:167%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mrs. Wonka">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/IMG_1998.jpg" style="width:105%" onclick="onClick(this)" class="w3-hover-opacity" alt="Where?">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/IMG_1971.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ashley">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/IMG_2015.jpg" style="width:130%" onclick="onClick(this)" class="w3-hover-opacity" alt="Falling Water">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/DSC_1483.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Falling Water">
+    </div>
+        <div class="w3-col m4">
+      <img src="res/DSC_1489.jpg" style="width:160%" onclick="onClick(this)" class="w3-hover-opacity" alt="Falling Water">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/02200005.jpg" style="width:150%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bears in Car">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02210008.jpg" style="width:137%" onclick="onClick(this)" class="w3-hover-opacity" alt="Jason">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02210012.jpg" style="width:155%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bun in the Oven">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02230014.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Goat Cheese">
+    </div>
+  </div>
+
+    <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/012.jpg" style="width:180%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ferris Wheel">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/024.jpg" style="width:130%" onclick="onClick(this)" class="w3-hover-opacity" alt="Umbrella">
+    </div>
+        <div class="w3-col m4">
+      <img src="res/025.jpg" style="width:160%" onclick="onClick(this)" class="w3-hover-opacity" alt="Paris in the Rain">
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/02230019.jpg" style="width:130%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sunset">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02270025.jpg" style="width:160%" onclick="onClick(this)" class="w3-hover-opacity" alt="Rachel">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02350004.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Greece">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02380004.jpg" style="width:170%" onclick="onClick(this)" class="w3-hover-opacity" alt="Picturesque">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/02380028.jpg" style="width:150%" onclick="onClick(this)" class="w3-hover-opacity" alt="Charlotte">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02400027.jpg" style="width:140%" onclick="onClick(this)" class="w3-hover-opacity" alt="Mt Blanc">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02420018.jpg" style="width:120%" onclick="onClick(this)" class="w3-hover-opacity" alt="Singapore Water">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02420023.jpg" style="width:160%" onclick="onClick(this)" class="w3-hover-opacity" alt="Half Family">
+    </div>
+  </div>
+
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="res/02430013.jpg" style="width:170%" onclick="onClick(this)" class="w3-hover-opacity" alt="Orange">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02490006.jpg" style="width:180%" onclick="onClick(this)" class="w3-hover-opacity" alt="Tuk Tuk">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="res/02490017.jpg" style="width:120%" onclick="onClick(this)" class="w3-hover-opacity" alt="Me">
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+
+    <!--<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button>-->
+</div>
+
+
+
+<!-- Fourth Parallax Image with Magic Text -->
+<div class="bgimg-5 w3-display-container w3-opacity-min" id="Magic">
+	<div class="w3-display-middle" style="white-space:nowrap;">
+     <span class="w3-xxlarge w3-text-white w3-wide">Magic</span>
+  </div>
+</div>
+
+
+<!-- Container (The Magic Section) -->
+<div class="w3-content w3-row-padding w3-container w3-padding-64" id="Photography">
+  <h3 class="w3-center">Card Tricks</h3>
+  <p class="w3-center"><em>Over the summer of 2017, I also got very into card tricks. I learned a lot of tricks over the summer, but these are some of my favorite ones <br> Click on the magic tricks to play</em></p><br>
+
+<!--Changing colors-->
+<video class="width=400 w3-middle"  controls>
+  <source src="res/IMG_0378.mov" >
+</video>
+
+	<h3 class="w3-center">This trick is not about the suit or the number, it is about something more...</h3>
+</div>
+
+
+<!-- Sixth Parallax Image with The Speeches Text -->
+<div class="bgimg-6 w3-display-container w3-opacity-min" id="Speeches">
+   <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-xxlarge w3-text-white w3-wide">Speeches</span>
+  </div>
+</div>
+
+<!-- Container (The Zumbyes Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center">Videos</h3>
+  <p class="w3-center"><em>My senior year, I got really into speech giving. I won a justice speech competition that year and this was the winning speech. <br> Click on the videos to play</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <!-- Justic Speech Competition -->
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/UVa1NSvIgQI">
+  </iframe>
+</div>
+</div>
+
+
+
+<!-- Fifth Parallax Image with Contact Text -->
+<div class="bgimg-3 w3-display-container w3-opacity-min" id="contact">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" >
+  <h3 class="w3-center">Where am I?</h3>
+  <p class="w3-center"><em>Amherst College</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/Amherst_College_Seal.svg/1200px-Amherst_College_Seal.svg.png" id="googleMap" class="w3-round-large w3-greyscale" style="width:75%;height:200px;"></img>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Amherst, MA<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 312-590-6400<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: gfranklin20@amherst.edu<br>
+      </div>
+      <!--<form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+        <button class="w3-button w3-black w3-right w3-section" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </form>-->
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/gregory.franklin.984/about?lst=100001120631571%3A100001120631571%3A1514538570"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/therealgregfranklin/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/gregory-franklin-814b2714a"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+</footer>
+ 
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(41.878114, -87.629798);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
